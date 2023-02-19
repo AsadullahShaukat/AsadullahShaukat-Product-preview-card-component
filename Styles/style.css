@@ -1,0 +1,214 @@
+/* - Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+}
+
+@media (min-width: 376px) {
+    body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Montserrat', sans-Arial;
+    }
+    
+    .card-container {
+        display: flex;
+    }
+    
+    .image-column {
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+        height: 450px;
+    }
+    
+    .card-image {
+        height: 450px;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+    
+    .image-for-android {
+        display: none;
+    }
+    
+    .card-info-row {
+        width: 300px;
+        height: 450px;
+        background-color: white;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 12px;
+        box-sizing: border-box;
+        padding: 15px 30px;
+    }
+    
+    .card-header {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 13px;
+        color: hsl(228, 12%, 48%);
+        padding: 15px 0;
+    }
+    
+    .card-title {
+        font-family: 'Fraunces', serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 33px;
+        margin-bottom: 25px;
+    }
+    
+    .card-desc {
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    
+    .pricing {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .new-price {
+        font-family: 'Fraunces', serif;
+        color: hsl(158, 36%, 37%);
+        font-size: 32px;
+        font-weight: 700;
+        margin-right: 20px;
+    }
+    
+    .old-price {
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+    }
+    
+    .add-to-cart-btn {
+        background-color: hsl(158, 36%, 37%);
+        color: white;
+        border: none;
+        padding: 14px 62px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .add-to-cart-img {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-family: 'Montserrat', sans-Arial;
+        background-color: hsl(30, 38%, 92%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-container {
+        width: 90vw;
+        border-radius: 8px 8px 0 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-image {
+        display: none;
+    }
+
+    .image-for-android {
+        display: inline-block;
+        width: 90vw;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .card-info-row {
+        background-color: white;
+        padding: 5vw;
+    }
+    
+    .card-header {
+        color: hsl(228, 12%, 48%);
+        text-transform: uppercase;
+        letter-spacing: 1vw;
+        font-size: 12px;
+    }
+    
+    .card-title {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 2vh;
+    }
+    
+    .card-desc {
+        color: hsl(228, 12%, 48%);
+        font-size: 13px;
+        margin-top: 2vh;
+    }
+    
+    .pricing {
+        display: flex;
+        align-items: center;
+        margin-top: 3vh;
+    }
+    
+    .new-price {
+        font-size: 25px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        color: hsl(158, 36%, 37%);
+        margin-right: 10vw;
+    }
+    
+    .old-price {
+        font-size: 15px;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+    }
+    
+    .add-to-cart-btn {
+        background-color: hsl(158, 36%, 37%);
+        border: none;
+        width: 80vw;
+        padding: 10px 0 10px 0;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 13px;
+        margin-top: 2vh;
+    }
+    
+    .add-to-cart-img {
+        margin-right: 8px;
+    }
+}
